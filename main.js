@@ -3,12 +3,8 @@ var current_player = 0;
 
 buttons.forEach((button) => {
     const buttonimg = button.id.replace("Dup","");
-    //buttonimg = buttonimg.replace("pole1","polen");
-    //buttonimg = buttonimg.replace("pole2","polen");
-    //buttonimg = buttonimg.replace("pole3","polen");
-    //buttonimg = buttonimg.replace("pole4","polen"); 
     console.log(buttonimg);  
-    button.style.setProperty('--button-image', `url('/img/${buttonimg}.png')`);
+    button.style.setProperty('--button-image', `url('https://raw.githubusercontent.com/Kshtij-7/sequence/main/img/${buttonimg}.png')`);
 });
 function test() {
     window.open("https://youtube.com")
