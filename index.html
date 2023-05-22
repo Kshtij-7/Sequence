@@ -3,135 +3,150 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="row1">
-        <button id="pole1" class="pole" disabled="true">Pole</button>
-        <button id="2blackspade"onclick="coinadd(this.id)" class="card">2blackspade</button>
-        <button id="3blackspade"onclick="coinadd(this.id)"class="card">3blackspade</button>
-        <button id="4blackspade"onclick="coinadd(this.id)"class="card">4blackspade</button>
-        <button id="5blackspade"onclick="coinadd(this.id)"class="card">5blackspade</button>
-        <button id="6blackspade"onclick="coinadd(this.id)"class="card">6blackspade</button>
-        <button id="7blackspade"onclick="coinadd(this.id)"class="card">7blackspade</button>
-        <button id="8blackspade"onclick="coinadd(this.id)"class="card">8blackspade</button>
-        <button id="9blackspade"onclick="coinadd(this.id)"class="card">9blackspade</button>
-        <button id="pole2" class="pole" disabled="true">Pole</button>
-    </div>
+    <button onclick="randomizeDeck()">Get randomizeDeck</button>
+    <table id="gameBoard">
+    <tr>
+        <td><button id="pole1" class="pole" disabled="true">empty</button></td>
+        <td><button id="2bsO"onclick="coinadd(this.id)" class="card">empty</button></td>
+        <td><button id="3bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="pole2" class="pole" disabled="true">empty</button></td>
+    </tr>
     <br>
-    <div class="row2">
-        <button id="6blackclub"onclick="coinadd(this.id)"class="card">6blackclub</button>
-        <button id="5blackclub"onclick="coinadd(this.id)"class="card">5blackclub</button>
-        <button id="4blackclub"onclick="coinadd(this.id)"class="card">4blackclub</button>
-        <button id="3blackclub"onclick="coinadd(this.id)"class="card">3blackclub</button>
-        <button id="2blackclub"onclick="coinadd(this.id)"class="card">2blackclub</button>
-        <button id="Aredheart"onclick="coinadd(this.id)"class="card">Aredheart</button>
-        <button id="Kredheart"onclick="coinadd(this.id)"class="card">Kredheart</button>
-        <button id="Qredheart"onclick="coinadd(this.id)"class="card">Qredheart</button>
-        <button id="10redheart"onclick="coinadd(this.id)"class="card">10redheart</button>
-        <button id="10blackspade"onclick="coinadd(this.id)"class="card">10blackspade</button>
-    </div>
+    <tr>
+        <td><button id="6bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="ArhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KrhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QrhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1bsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row3">
-        <button id="7blackclub"onclick="coinadd(this.id)"class="card">7blackclub</button>
-        <button id="Ablackspade"onclick="coinadd(this.id)"class="card">Ablackspade</button>
-        <button id="2reddiamond"onclick="coinadd(this.id)"class="card">2reddiamond</button>
-        <button id="3reddiamond"onclick="coinadd(this.id)"class="card">3reddiamond</button>
-        <button id="4reddiamond"onclick="coinadd(this.id)"class="card">4reddiamond</button>
-        <button id="5reddiamond"onclick="coinadd(this.id)"class="card">5reddiamond</button>
-        <button id="6reddiamond"onclick="coinadd(this.id)"class="card">6reddiamond</button>
-        <button id="7reddiamond"onclick="coinadd(this.id)"class="card">7reddiamond</button>
-        <button id="9redheart"onclick="coinadd(this.id)"class="card">9redheart</button>
-        <button id="Qblackspade"onclick="coinadd(this.id)"class="card">Qblackspade</button>
-    </div>
+    <tr>
+        <td><button id="7bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="AbsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QbsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row4">
-        <button id="8blackclub"onclick="coinadd(this.id)"class="card">8blackclub</button>
-        <button id="Kblackclub"onclick="coinadd(this.id)"class="card">Kblackclub</button>
-        <button id="6blackclubDup"onclick="coinadd(this.id)"class="card">6blackclub</button>
-        <button id="5blackclubDup"onclick="coinadd(this.id)"class="card">5blackclub</button>
-        <button id="4blackclubDup"onclick="coinadd(this.id)"class="card">4blackclub</button>
-        <button id="3blackclubDup"onclick="coinadd(this.id)"class="card">3blackclub</button>
-        <button id="2blackclubDup"onclick="coinadd(this.id)"class="card">2blackclub</button>
-        <button id="8reddiamond"onclick="coinadd(this.id)"class="card">8reddiamond</button>
-        <button id="8redheart"onclick="coinadd(this.id)"class="card">8redheart</button>
-        <button id="Kblackspade"onclick="coinadd(this.id)"class="card">Kblackspade</button>
-    </div>
+    <tr>
+        <td><button id="8bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KbcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KbsO"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row5">
-        <button id="9blackclub"onclick="coinadd(this.id)"class="card">8blackclub</button>
-        <button id="Qblackclub"onclick="coinadd(this.id)"class="card">Kblackspade</button>
-        <button id="7blackclubDup"onclick="coinadd(this.id)"class="card">6blackclub</button>
-        <button id="6redheart"onclick="coinadd(this.id)"class="card">6redheart</button>
-        <button id="5redheart"onclick="coinadd(this.id)"class="card">5redheart</button>
-        <button id="4redheart"onclick="coinadd(this.id)"class="card">4redheart</button>
-        <button id="AredheartDup"onclick="coinadd(this.id)"class="card">Aredheart</button>
-        <button id="9reddiamond"onclick="coinadd(this.id)"class="card">9reddiamond</button>
-        <button id="7redheart"onclick="coinadd(this.id)"class="card">7redheart</button>
-        <button id="AblackspadeDup"onclick="coinadd(this.id)"class="card">Ablackspade</button>
-    </div>
+    <tr>
+        <td><button id="9bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QbcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="ArhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="AbsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row6">
-        <button id="10blackclub"onclick="coinadd(this.id)"class="card">10blackclub</button>
-        <button id="10blackspadeDup"onclick="coinadd(this.id)"class="card">10blackspade</button>
-        <button id="8blackclubDup"onclick="coinadd(this.id)"class="card">8blackclub</button>
-        <button id="7redheartDup"onclick="coinadd(this.id)"class="card">7redheart</button>
-        <button id="2redheart"onclick="coinadd(this.id)"class="card">2redheart</button>
-        <button id="3redheart"onclick="coinadd(this.id)"class="card">3redheart</button>
-        <button id="KredheartDup"onclick="coinadd(this.id)"class="card">Kredheart</button>
-        <button id="10reddiamond"onclick="coinadd(this.id)"class="card">10reddiamond</button>
-        <button id="6redheartDup"onclick="coinadd(this.id)"class="card">6redheart</button>
-        <button id="2reddiamondDup"onclick="coinadd(this.id)"class="card">2reddiamond</button>
-    </div>
+    <tr>
+        <td><button id="1bcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3rhO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KrhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1rdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row7">
-        <button id="QblackclubDup"onclick="coinadd(this.id)"class="card">Qblackclub</button>
-        <button id="9blackspadeDup"onclick="coinadd(this.id)"class="card">9blackspade</button>
-        <button id="9blackclubDup"onclick="coinadd(this.id)"class="card">9blackclub</button>
-        <button id="8redheartDup"onclick="coinadd(this.id)"class="card">8redheart</button>
-        <button id="9redheartDup"onclick="coinadd(this.id)"class="card">9redheart</button>
-        <button id="10redheartDup"onclick="coinadd(this.id)"class="card">10redheart</button>
-        <button id="QredheartDup"onclick="coinadd(this.id)"class="card">Qredheart</button>
-        <button id="Qreddiamond"onclick="coinadd(this.id)"class="card">Qreddiamond</button>
-        <button id="5redheartDup"onclick="coinadd(this.id)"class="card">5redheart</button>
-        <button id="3reddiamondDup"onclick="coinadd(this.id)"class="card">3reddiamond</button>
-    </div>
+    <tr>
+        <td><button id="QbcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QrhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="Qrd"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row8">
-        <button id="KblackclubDup"onclick="coinadd(this.id)"class="card">Kblackclub</button>
-        <button id="8blackspadeDup"onclick="coinadd(this.id)"class="card">8blackspade</button>
-        <button id="10blackclubDup"onclick="coinadd(this.id)"class="card">10blackclub</button>
-        <button id="QblackspadeDup"onclick="coinadd(this.id)"class="card">Qblackspade</button>
-        <button id="KblackspadeDup"onclick="coinadd(this.id)"class="card">Kblackspade</button>
-        <button id="Ablackclub"onclick="coinadd(this.id)"class="card">Ablackclub</button>
-        <button id="Areddiamond"onclick="coinadd(this.id)"class="card">Areddiamond</button>
-        <button id="Kreddiamond"onclick="coinadd(this.id)"class="card">Kreddiamond</button>
-        <button id="4redheartDup"onclick="coinadd(this.id)"class="card">4redheart</button>
-        <button id="4reddiamondDup"onclick="coinadd(this.id)"class="card">4reddiamond</button>
-    </div>
+    <tr>
+        <td><button id="KbcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1bcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QbsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KbsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="AbcO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="ArdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KrdO"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row9">
-        <button id="AblackclubDup"onclick="coinadd(this.id)"class="card">Ablackclub</button>
-        <button id="7blackspadeDup"onclick="coinadd(this.id)"class="card">7blackspade</button>
-        <button id="6blackspadeDup"onclick="coinadd(this.id)"class="card">6blackspade</button>
-        <button id="5blackspadeDup"onclick="coinadd(this.id)"class="card">5blackspade</button>
-        <button id="4blackspadeDup"onclick="coinadd(this.id)"class="card">4blackspade</button>
-        <button id="3blackspadeDup"onclick="coinadd(this.id)"class="card">3blackspade</button>
-        <button id="2blackspadeDup"onclick="coinadd(this.id)"class="card">2blackspade</button>
-        <button id="2redheartDup"onclick="coinadd(this.id)" class="card">2redheart</button>
-        <button id="3redheartDup"onclick="coinadd(this.id)"class="card">3redheart</button>
-        <button id="5reddiamondDup"onclick="coinadd(this.id)"class="card">5reddiamond</button>
-    </div>
+    <tr>
+        <td><button id="AbcD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="4bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="3bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2bsD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="2rhD"onclick="coinadd(this.id)" class="card">empty</button></td>
+        <td><button id="3rhD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="5rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+    </tr>
     <br>
-    <div class="row10">
-        <button id="pole3" class="pole" disabled="true">Pole</button>
-        <button id="AreddiamondDup"onclick="coinadd(this.id)"class="card">Areddiamond</button>
-        <button id="KreddiamondDup"onclick="coinadd(this.id)"class="card">Kreddiamond</button>
-        <button id="QreddiamondDup"onclick="coinadd(this.id)"class="card">Qreddiamond</button>
-        <button id="10reddiamondDup"onclick="coinadd(this.id)"class="card">10reddiamond</button>
-        <button id="9reddiamondDup"onclick="coinadd(this.id)"class="card">9reddiamond</button>
-        <button id="8reddiamondDup"onclick="coinadd(this.id)"class="card">8reddiamond</button>
-        <button id="7reddiamondDup"onclick="coinadd(this.id)"class="card">7reddiamond</button>
-        <button id="6reddiamondDup"onclick="coinadd(this.id)"class="card">6reddiamond</button>
-        <button id="pole4" class="pole" disabled="true">Pole</button>
-    </div>
+    <tr>
+        <td><button id="pole3" class="pole" disabled="true">empty</button></td>
+        <td><button id="ArdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="KrdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="QrdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="1rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="9rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="8rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="7rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="6rdD"onclick="coinadd(this.id)"class="card">empty</button></td>
+        <td><button id="pole4" class="pole" disabled="true">empty</button></td>
+    </tr>
     <br>
+    </table>
+    <br><br>
+    <button id="revealer" onclick="reloadTextures()" class="button-29">Reveal the Cards!</button>
+    <br><br>
+    <div id="cards">
+        <button id="card0" class="card" onclick="selectCard(this.id)"></button>
+        <button id="card1" class="card"></button>
+        <button id="card2" class="card"></button>
+        <button id="card3" class="card"></button>
+        <button id="card4" class="card"></button>
+        <button id="card5" class="card"></button>
+        <button id="card6" class="card"></button>
+    </div>
     <script src="main.js"></script>
 </body>
